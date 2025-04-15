@@ -1,126 +1,43 @@
-# Prompt Policy for Environmental Health Professionals
+# Prompt Recipes & Policy for Environmental Health Professionals
 
-Welcome! This site contains reusable prompts and a guiding prompt policy designed for Environmental Health professionals using ChatGPT, Gemini, or other LLMs.
+This repository contains a set of standardized prompt recipes and a governing prompt policy for Environmental Health professionals who use large language models (LLMs) like ChatGPT and Gemini in their daily work.
 
-These prompts are built for real-world tasks such as drafting emails, explaining regulations, translating notices, and summarizing meetings. Each one is written to be easy to use, accurate, and audience-appropriate.
-
-> **📌 Tip:** You don’t need to remember any prompt names. Just use natural language, and the model will follow the logic defined in the Prompt Policy below.
+These prompts are designed to improve consistency, clarity, and professionalism when performing tasks such as reviewing communications, summarizing meetings, translating documents, and explaining complex concepts.
 
 ---
 
-## 🔧 Common Principles
+## 📌 Files in This Repository
 
-All prompt responses should follow these standards:
+### 🧠 [Prompt Policy](prompt-policy.md)
+Defines the expected behavior for the model across all supported use cases. Explains how the model should interpret prompts, ask clarifying questions when necessary, and select the appropriate recipe based on intent.
 
-- Preserve the original meaning and intent
-- Tailor language and tone to the intended audience
-- Ask for clarification when necessary
-- Do not fabricate information, deadlines, or laws
-- Do not alter names of laws, agencies, or addresses unless explicitly directed
+### 📝 Prompt Recipes
 
----
+- 📧 [Recipe #1: Check an Email or Letter](recipe-01-check-email-or-letter.md)  
+  Identify indisputable grammar, spelling, and punctuation errors. No rewriting or tone suggestions.
 
-## 🧠 Prompt Recipes
+- 📝 [Recipe #2: Summarize Meeting Notes](recipe-02-summarize-meeting-notes.md)  
+  Provide an executive summary, list of discussion points (including reversed decisions), and deliverables with responsible parties and due dates.
 
-### 1. [Check an Email or Letter](#1-check-an-email-or-letter)
+- 🌐 [Recipe #3: Translate](recipe-03-translate.md)  
+  Translate text accurately while preserving legal citations, agency names, addresses, and formatting.
 
-Proofread for typos, grammar, and punctuation. List only clear, indisputable issues—no rewrites or tone suggestions.
-
-### 2. [Summarize Meeting Notes](#2-summarize-meeting-notes)
-
-Generate an executive summary, key discussion points, and a deliverables section with responsible parties and dates.
-
-### 3. [Translate Professional Content](#3-translate-professional-content)
-
-Translate notices or letters while preserving names of agencies, laws, citations, email addresses, and locations.
-
-### 4. [Explain a Complicated Regulation, Process, or Request](#4-explain-a-complicated-regulation-process-or-request)
-
-Reword a regulation or process based on the audience's role. Use analogies and definitions if helpful, but maintain legal accuracy.
+- 📘 [Recipe #4: Explain Complicated Context](recipe-04-explain-complicated-context.md)  
+  Reword technical or legal text for a specified audience (Peer, Business Person, or Operator) using clear language and definitions.
 
 ---
 
-## 📘 Full Prompt Policy
+## 🔗 How to Use
 
-The model should route user requests to the correct recipe based on the **intent of the prompt**, not a keyword or label.
+1. Open the appropriate recipe based on your task.
+2. Copy the full prompt and paste it into your preferred language model.
+3. Replace placeholder text with your actual content (e.g., a letter to review or a regulation to explain).
+4. Review the output for accuracy and context before sharing.
 
-If the prompt doesn't match any recipe, respond using general best practices (clarity, accuracy, professional tone) and ask clarifying questions as needed.
-
----
-
-## 📝 Prompt Details
-
-### 1. Check an Email or Letter
-
-**Intent:** Identify and correct spelling, grammar, and punctuation errors in professional communications.
-
-**Behavior:**
-
-- Return a list of errors, each with:
-  - Original line
-  - Correction
-- Do not suggest rewrites or tone changes.
+All prompts are designed to be used independently but follow a shared standard defined in the [Prompt Policy](prompt-policy.md).
 
 ---
 
-### 2. Summarize Meeting Notes
+## 🛠 Contributing
 
-**Intent:** Convert raw meeting notes into a clear, structured summary.
-
-**Include:**
-
-1. Executive Summary
-2. Main Discussion Points (including reversed/dismissed decisions)
-3. Deliverables — for each, include:
-   - Responsible party
-   - Deliverable description
-   - Due date (or "No Date Discussed")
-
----
-
-### 3. Translate Professional Content
-
-**Intent:** Translate official communications accurately while maintaining legal and organizational references.
-
-**Rules:**
-
-- Do **not** translate:
-  - Law names or citations (e.g., CalCode, §114390)
-  - Agency names
-  - Email addresses, physical addresses, URLs
-- Retain original meaning
-- Ask for clarification if unsure
-
----
-
-### 4. Explain a Complicated Regulation, Process, or Request
-
-**Intent:** Rephrase technical or legal content for a specific audience (Peer, Business Person, Operator).
-
-**Guidelines:**
-
-- Rewrite for clarity, but preserve legal meaning
-- Define jargon or technical terms
-- Use analogies **only if reliable and helpful**
-- Never assume missing context — ask if needed
-
----
-
-## 📎 Suggested Use
-
-Paste your prompt (letter, regulation, note, etc.) into ChatGPT or another model and add a natural request like:
-
-- "Can you check this email for typos?"
-- "Please summarize these meeting notes."
-- "Translate this into Spanish."
-- "Help me explain this regulation to an operator."
-
-The model will follow the appropriate guidance automatically.
-
----
-
-## 🔗 Get Involved
-
-Want to contribute improvements or request new prompt types? [Open an issue](https://github.com/YOUR_USERNAME/YOUR_REPO/issues) or submit a pull request.
-
----
+To suggest changes or add a new recipe, open an issue or submit a pull request.
